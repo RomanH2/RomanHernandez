@@ -1,0 +1,64 @@
+//Name: Roman Hernandez
+// Section: 0955
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    //Declare Variables
+    string name;
+    string zodiac = " ";
+    int month, day;
+
+    //User Input
+    cout << "Enter full name: " << endl;
+    getline(cin, name);
+    cout << "Enter birth month (1-12): " << endl;
+    cin >> month;
+    cout << "Enter birth day: " << endl;
+    cin >> day;
+
+    //Conditional statements and output
+    if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
+        zodiac = "Aries";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    } else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
+        zodiac = "Taurus";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    } else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
+        zodiac = "Gemini";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    } else if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) {
+        zodiac = "Cancer";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    } else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) {
+        zodiac = "Leo";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    } else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
+        zodiac = "Virgo";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    } else if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) {
+        zodiac = "Libra";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    } else if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) {
+        zodiac = "Scorpio";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    } else if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) {
+        zodiac = "Sagittarius";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    } else if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) {
+        zodiac = "Capricorn";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    } else if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
+        zodiac = "Aquarius";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    } else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
+        zodiac = "Pisces";
+        cout << "Hello " << name << "! " << "\nYour zodiac sign is: " << zodiac << endl;
+    }else {
+        cout << "Invalid input. Please try again.";
+    }
+
+    return 0;
+}
